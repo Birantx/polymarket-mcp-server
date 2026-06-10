@@ -17,7 +17,7 @@ export const GAMMA_BASE = "https://gamma-api.polymarket.com";
 export const CLOB_BASE = "https://clob.polymarket.com";
 export const DATA_BASE = "https://data-api.polymarket.com";
 
-const USER_AGENT = "polymarket-mcp-server/0.1 (+https://github.com/birantegin/polymarket-mcp-server)";
+const USER_AGENT = "polymarket-mcp-server/0.1 (+https://github.com/Birantx/polymarket-mcp-server)";
 const REQUEST_TIMEOUT_MS = 15_000;
 
 export class PolymarketApiError extends Error {

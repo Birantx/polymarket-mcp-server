@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Polymarket MCP server — give Claude (and any MCP client) read-only access to Polymarket prediction markets: search markets, order books, price history, trader activity, and the reward-eligible markets ranked by pool-to-competition. No API keys required.",
   "license": "MIT",
-  "author": "Biran",
+  "author": "Birant Egin",
   "type": "module",
   "bin": {
     "polymarket-mcp": "dist/index.js"
@@ -36,7 +36,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/birantegin/polymarket-mcp-server.git"
+    "url": "https://github.com/Birantx/polymarket-mcp-server.git"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.29.0",

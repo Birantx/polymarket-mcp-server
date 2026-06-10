@@ -88,7 +88,7 @@ Claude / MCP client  ──stdio──▶  polymarket-mcp-server
 ## Local development
 
 ```bash
-git clone https://github.com/birantegin/polymarket-mcp-server.git
+git clone https://github.com/Birantx/polymarket-mcp-server.git
 cd polymarket-mcp-server
 npm install
 npm run build
