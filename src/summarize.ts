@@ -140,11 +140,15 @@ export function competitionWithinBand(book: OrderBook, bandCents: number): numbe
   // while book prices are fractions of $1 (0..1). Convert cents -> fraction so
   // a 3.5¢ max spread becomes a ±0.035 band around the midpoint.
   const band = bandCents / 100;
+  // Float guard: |0.535 - 0.5| evaluates to 0.03500000000000003, which would
+  // silently drop a level resting exactly on max_spread and under-count
+  // competition. 1e-9 is orders of magnitude below any real price tick.
+  const BAND_EPS = 1e-9;
   const inBand = (level: BookLevel) => {
     const price = Number(level.price);
     const size = Number(level.size);
     if (!Number.isFinite(price) || !Number.isFinite(size)) return 0;
-    return Math.abs(price - midpoint) <= band ? price * size : 0;
+    return Math.abs(price - midpoint) <= band + BAND_EPS ? price * size : 0;
   };
   const bidNotional = (book.bids ?? []).reduce((sum, l) => sum + inBand(l), 0);
   const askNotional = (book.asks ?? []).reduce((sum, l) => sum + inBand(l), 0);
