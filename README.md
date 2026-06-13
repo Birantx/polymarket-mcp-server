@@ -106,6 +106,10 @@ node dist/index.js
 - `v0.1` (this release): read-only tools, credential-free.
 - `v0.2` (demand-driven): optional authenticated order placement via the CLOB client, gated behind explicit key configuration.
 
+## Related
+
+- [**deltafarm**](https://github.com/Birantx/deltafarm) — a non-custodial, delta-neutral funding farmer for Hyperliquid (long spot / short perp; your keys stay on your machine). Same author, same approach: on-chain-verifiable trading tooling you can read and run yourself.
+
 ## Disclaimer
 
 This is an unofficial, community-built tool and is **not affiliated with Polymarket**. It is read-only and for informational use. Nothing here is financial advice. Prediction markets may be restricted in your jurisdiction.
