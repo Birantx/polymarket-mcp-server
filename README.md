@@ -1,5 +1,10 @@
 # Polymarket MCP Server
 
+[![npm](https://img.shields.io/npm/v/polymarket-mcp-server)](https://www.npmjs.com/package/polymarket-mcp-server)
+[![Node](https://img.shields.io/badge/node-%3E%3D18-brightgreen)](https://nodejs.org)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+
 > A **Model Context Protocol (MCP) server** that gives Claude — and any MCP client — read-only access to [Polymarket](https://polymarket.com), the largest prediction market. Search markets, pull live order books and price history, inspect any wallet's positions, and **rank the liquidity-reward markets by where you actually earn the most per dollar quoted.**
 
 **No API keys. No wallet. No signup.** Every tool runs against Polymarket's public APIs, so it works the second you add it to Claude.
@@ -105,10 +110,6 @@ node dist/index.js
 
 - `v0.1` (this release): read-only tools, credential-free.
 - `v0.2` (demand-driven): optional authenticated order placement via the CLOB client, gated behind explicit key configuration.
-
-## Related
-
-- [**deltafarm**](https://github.com/Birantx/deltafarm) — a non-custodial, delta-neutral funding farmer for Hyperliquid (long spot / short perp; your keys stay on your machine). Same author, same approach: on-chain-verifiable trading tooling you can read and run yourself.
 
 ## Disclaimer
 

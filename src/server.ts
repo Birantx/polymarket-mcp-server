@@ -14,7 +14,7 @@ import { registerListRewardMarkets } from "./tools/list-reward-markets.js";
 import { registerGetTraderActivity } from "./tools/get-trader-activity.js";
 
 export const SERVER_NAME = "polymarket-mcp-server";
-export const SERVER_VERSION = "0.1.0";
+export const SERVER_VERSION = "0.1.1";
 
 export function buildServer(): McpServer {
   const server = new McpServer({ name: SERVER_NAME, version: SERVER_VERSION });
